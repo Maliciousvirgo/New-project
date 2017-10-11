@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab:700");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  margin: 0; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.nav:before,
+.nav:after,
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+[class*='col-'] {
+  float: left;
+  min-height: 1px; }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+h2 {
+  margin-top: 1px;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Amatic SC", cursive;
+  transition: linear 0.3s;
+  font-weight: bold; }
+
+h4 {
+  margin-top: 1px;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Amatic SC", cursive; }
+
+.container-numbers .col-3 p {
+  padding: 10px 0;
+  text-align: center;
+  font-family: "Josefin Slab", serif;
+  color: #368c72;
+  font-size: 15px;
+  margin: 0 0 30px 0; }
+
+.adress {
+  padding: 10px 0;
+  text-align: left;
+  font-family: "Josefin Slab", serif;
+  color: #368c72;
+  font-size: 15px;
+  margin: 0 0 30px 0; }
+
+p {
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Josefin Slab", serif;
+  color: #d4d6c8;
+  font-size: 15px;
+  margin: 0 0 30px 0; }
+
+b {
+  font-weight: bold; }
+
+header {
+  height: 50px;
+  background-color: #f82825;
+  color: white; }
+
+header li {
+  display: inline-block; }
+
+header ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  float: right; }
+
+header nav ul li a {
+  line-height: 50px;
+  padding: 0 20px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Amatic SC", cursive;
+  font-size: 25px; }
+
+header nav ul li a:hover {
+  background: #44443f;
+  color: #368c72; }
+
+header nav img {
+  padding: 10px 0; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.container-header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.container-icon {
+  margin: 0 auto; }
+
+.hero {
+  height: 300px;
+  background: url("https://i.imgur.com/DdG1MFs.jpg") center no-repeat;
+  background-size: 1400px 900px;
+  background-attachment: fixed; }
+
+.slogan {
+  margin-top: 90px;
+  background: rgba(255, 255, 255, 0.5);
+  float: right;
+  max-width: 800px; }
+
+.icon {
+  padding: 20px;
+  font-size: 70px;
+  width: 40%;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  transition: background linear 0.3s;
+  margin: 25px auto; }
+
+.search {
+  background-color: #282825;
+  text-align: center; }
+
+.search:hover {
+  background: #368c72;
+  color: white;
+  cursor: pointer; }
+
+.laptop {
+  background-color: #282825;
+  text-align: center; }
+
+.laptop:hover {
+  background: #368c72;
+  color: white;
+  cursor: pointer; }
+
+.gears {
+  background-color: #282825;
+  text-align: center; }
+
+.gears:hover {
+  background: #368c72;
+  color: white;
+  cursor: pointer; }
+
+.container-icon [class*="col-"]:hover h2 {
+  color: #368c72; }
+
+.slogan h1 {
+  margin-right: 150px;
+  padding: 20px 20px;
+  text-transform: uppercase;
+  font-family: "Amatic SC", cursive;
+  font-size: 30px; }
+
+.gallery img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  display: block; }
+
+.gallery [class*='col-'] {
+  position: relative; }
+
+.gallery [class*='col-']:hover .layer {
+  visibility: visible;
+  cursor: pointer; }
+
+.layer {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 200px;
+  visibility: hidden; }
+
+button {
+  margin: 0 20px;
+  cursor: pointer; }
+
+.circle {
+  padding: 20px 0;
+  font-size: 60px;
+  text-align: center;
+  margin: 0 auto; }
+
+.circle img {
+  height: 200px;
+  border-radius: 50%;
+  position: relative; }
+
+.imagine {
+  height: 300px;
+  background: url("https://preview.ibb.co/nFceBk/matthew_smith_5935.jpg") center no-repeat;
+  background-size: 1400px 900px;
+  background-attachment: fixed; }
+
+.container-imagine {
+  padding: 80px 100px;
+  margin: 0 auto; }
+
+.col-8 h2 {
+  text-shadow: 2px 2px #a18d8d; }
+
+.numbers {
+  padding: 60px 0; }
+
+footer {
+  padding: 50px 0;
+  background-color: #282825;
+  color: white; }
+
+.social {
+  margin: 0 auto;
+  width: 500px;
+  text-align: left;
+  padding: 20px; }
+
+.icon-btn {
+  height: 75px;
+  width: 75px;
+  border: 0;
+  border-color: #FFF;
+  border-radius: 50%;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 40px;
+  -webkit-backface-visibility: hidden;
+  -ms-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+
+.icon-btn:hover {
+  -webkit-transform: scale(1.1);
+    -webkit-transform--ms-transform: scale(1.1);
+      -webkit-transform--ms-transform-transform: scale(1.1); }
+
+.twitter {
+  color: #4099FF; }
+
+.twitter:hover {
+  background: #4099FF;
+  color: #FFF; }
+
+.facebook {
+  color: #3B5998; }
+
+.facebook:hover {
+  background: #3B5998;
+  color: #FFF; }
+
+.google-plus {
+  color: #DB5A3C; }
+
+.google-plus:hover {
+  background: #DB5A3C;
+  color: #FFF; }
+
+.instagram {
+  color: #5C3D2E; }
+
+.instagram:hover {
+  background: #5C3D2E;
+  color: #FFF; }
+
+.github {
+  color: #4183C4; }
+
+.github:hover {
+  background: #4183C4;
+  color: #FFF; }
+
+@media (max-width: 768px) {
+  .col-m-1 {
+    width: 8.33%; }
+
+  .col-m-2 {
+    width: 16.66%; }
+
+  .col-m-3 {
+    width: 25%; }
+
+  .col-m-4 {
+    width: 33.33%; }
+
+  .col-m-5 {
+    width: 41.66%; }
+
+  .col-m-6 {
+    width: 50%; }
+
+  .col-m-7 {
+    width: 58.33%; }
+
+  .col-m-8 {
+    width: 66.66%; }
+
+  .col-m-9 {
+    width: 75%; }
+
+  .col-m-10 {
+    width: 83.33%; }
+
+  .col-m-11 {
+    width: 91.66%; }
+
+  .col-m-12 {
+    width: 100%; }
+
+  header nav ul li {
+    display: block;
+    text-align: center; }
+
+  header nav ul {
+    float: none; }
+
+  header nav ul li a {
+    line-height: 50px;
+    padding: 0 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Amatic SC", cursive;
+    font-size: 55px;
+    text-shadow: 4px 2px 5px #000; }
+
+  .container-header {
+    text-align: center; }
+
+  .portrait {
+    float: none;
+    padding: 0 80px; }
+
+  .slogan {
+    display: none; }
+
+  .col-m-4 {
+    width: 80%;
+    float: none;
+    margin: 0 auto; }
+
+  .layer {
+    position: absolute;
+    background: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 200px;
+    visibility: visible; }
+
+  .social {
+    margin: 0 auto;
+    text-align: center; }
+
+  .icon-btn {
+    height: 40px;
+    width: 40px;
+    border: 0;
+    border-color: #FFF;
+    border-radius: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-backface-visibility: hidden;
+    -ms-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); } }

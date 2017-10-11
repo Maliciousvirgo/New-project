@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab:700")
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+	display: block
+
+body 
+	line-height: 1
+	margin: 0
+
+ol, ul 
+	list-style: none
+
+blockquote, q 
+	quotes: none
+
+blockquote:before, 
+blockquote:after,
+q:before, 
+q:after 
+	content: ''
+	content: none
+
+table 
+	border-collapse: collapse
+	border-spacing: 0
+
+* 
+	box-sizing: border-box
+
+.nav:before, 
+.nav:after, 
+.row:before, 
+.row:after 
+	content: ""
+	display: table
+	clear: both
+	
+$white: #fff
+$color_viridian: #368c72
+$color_shark: #282825
+$color_picton_blue: #4099ff
+$color_azure: #3b5998
+$color_flame_pea: #db5a3c
+$color_quincy: #5c3d2e
+$color_steel_blue: #4183c4
+
+$fonts_1: 'Amatic SC', cursive
+$fonts_2: 'Josefin Slab', serif
+
+%extend_1
+	margin-top: 1px
+	font-size: 40px
+	text-align: center
+	text-transform: uppercase
+	font-weight: bold
+	font-family: $fonts_1
+
+%extend_2
+	font-size: 15px
+	margin: 0 0 30px 0
+	font-family: $fonts_2
+
+%extend_3
+	width: 100%
+	max-width: 1200px
+	margin: 0 auto
+
+%extend_4
+	background-color: $color_shark
+	text-align: center
+	
+%extend_5
+	background: $color_viridian
+	color: white
+	cursor: pointer
+	
+=transform ($scale)
+	-webkit-transform:	$scale
+	-ms-transform:		$scale
+	transform:			$scale
+
+[class*='col-'] 
+	float: left
+	min-height: 1px
+
+@for $i from 1 through 12
+	.col-#{$i}
+		width: (100% / 12 * $i)
+
+h2
+	@extend %extend_1
+	transition: linear .3s
+
+h4
+	@extend %extend_1
+
+
+.container-numbers .col-3 p
+	@extend %extend_2
+	padding: 10px 0
+	text-align: center
+	color: $color_viridian
+
+
+.adress 
+	@extend %extend_2
+	padding: 10px 0
+	text-align: left
+	color: $color_viridian
+	
+p 
+	@extend %extend_2
+	padding: 20px 0
+	text-align: center
+	color: #d4d6c8
+
+b
+	font-weight: bold
+
+header 
+	height: 50px
+	background-color: $color_shark
+	color: white
+	li 
+		display: inline-block
+	ul 
+		margin: 0 auto
+		padding: 0
+		list-style-type: none
+		float: right
+	nav
+		img 
+			padding: 10px 0
+		ul
+			li
+				a 
+					line-height: 50px
+					padding: 0 20px
+					display: block
+					color: $white
+					text-decoration: none
+					text-transform: uppercase
+					font-family: $fonts_1
+					font-size: 25px
+					&:hover 
+						background: #44443f
+						color: $color_viridian
+
+.container
+	@extend %extend_3
+
+.container-header 
+	@extend %extend_3
+
+.container-icon 
+	margin: 0 auto
+
+.hero 
+	height: 300px
+	background: url("https://i.imgur.com/DdG1MFs.jpg") center no-repeat
+	background-size: 1400px 900px
+	background-attachment: fixed
+
+.slogan 
+	margin-top: 90px
+	background: rgba(255, 255, 255, 0.5)
+	float: right
+	max-width: 800px
+	h1 
+		margin-right: 150px
+		padding: 20px 20px
+		text-transform: uppercase
+		font-family: $fonts_1
+		font-size: 30px
+
+.icon 
+	padding: 20px
+	font-size: 70px
+	width: 40%
+	border-radius: 25px
+	color: white
+	text-align: center
+	transition: background linear .3s
+	margin: 25px auto
+	
+.search 
+	@extend %extend_4
+	&:hover 
+		@extend %extend_5
+
+.laptop 
+	@extend %extend_4
+	&:hover
+		@extend %extend_5
+
+.gears 
+	@extend %extend_4
+	&:hover 
+		@extend %extend_5
+
+.container-icon [class*="col-"]:hover h2 
+	color: $color_viridian
+
+.gallery 
+	img 
+		height: 200px
+		width: 100%
+		object-fit: cover
+		display: block
+		
+	[class*='col-'] 
+		position: relative
+		&:hover .layer 
+			visibility: visible
+			cursor: pointer
+
+.layer
+	position: absolute
+	width: 100%
+	height: 100%
+	text-align: center
+	line-height: 200px
+	background: rgba(0, 0, 0, 0.5)
+	visibility: hidden
+
+button 
+	margin: 0 20px
+	cursor: pointer
+
+
+.circle 
+	padding: 20px 0
+	font-size: 60px
+	text-align: center
+	margin: 0 auto
+	img 
+		height: 200px
+		border-radius: 50%
+		position: relative
+
+.imagine 
+	height: 300px
+	background: url("https://preview.ibb.co/nFceBk/matthew_smith_5935.jpg") center no-repeat
+	background-size: 1400px 900px
+	background-attachment: fixed
+
+.container-imagine 
+	padding: 80px 100px
+	margin: 0 auto
+
+.col-8
+	h2 
+		text-shadow: 2px 2px #a18d8d
+
+.numbers 
+	padding: 60px 0
+	
+footer 
+	padding: 50px 0
+	background-color: $color_shark
+	color: $white
+
+.social 
+	margin: 0 auto
+	width: 500px
+	text-align: left
+	padding: 20px
+
+.icon-btn
+	height: 75px
+	width: 75px
+	border: 0
+	border-color: $white
+	border-radius: 50%
+	margin: 0 auto
+	cursor: pointer
+	font-size: 40px
+	-webkit-backface-visibility: hidden
+	+transform(translateZ(0))
+	&:hover 
+		+transform(scale(1.10))
+
+.twitter 
+	color: $color_picton_blue
+	&:hover 
+		background: $color_picton_blue
+		color: $white
+
+.facebook 
+	color: $color_azure
+	&:hover
+		background: $color_azure
+		color: $white
+
+.google-plus 
+	color: $color_flame_pea
+	&:hover 
+		background: $color_flame_pea
+		color: $white
+
+.instagram 
+	color: $color_quincy
+	&:hover 
+		background: $color_quincy
+		color: $white
+
+.github 
+	color: $color_steel_blue
+	&:hover 
+		background: $color_steel_blue
+		color: $white
+
+@media (max-width: 768px)
+	.col-m-1 
+		width: 8.33%
+	.col-m-2 
+		width: 16.66%
+	.col-m-3 
+		width: 25%
+	.col-m-4 
+		width: 33.33%
+	.col-m-5 
+		width: 41.66%
+	.col-m-6 
+		width: 50%
+	.col-m-7 
+		width: 58.33%
+	.col-m-8 
+		width: 66.66%
+	.col-m-9 
+		width: 75%
+	.col-m-10 
+		width: 83.33%
+	.col-m-11 
+		width: 91.66%
+	.col-m-12 
+		width: 100%
+    
+	header
+		nav
+			ul 
+				float: none
+				
+				li 
+					display: block
+					text-align: center
+					
+					a 
+						line-height: 50px
+						padding: 0 20px
+						display: block
+						color: $white
+						text-decoration: none
+						text-transform: uppercase
+						font-family: $fonts_1
+						font-size: 55px
+						text-shadow: 4px 2px 5px #000
+	
+	.container-header 
+		text-align: center
+	
+	.portrait
+		float: none
+		padding: 0 80px
+	
+	.slogan
+		display: none
+	
+	.col-m-4 
+		width: 80%
+		float: none
+		margin: 0 auto
+	
+	.layer
+		position: absolute
+		width: 100%
+		height: 100%
+		text-align: center
+		line-height: 200px
+		background: none
+		visibility: visible
+	
+	.social 
+		margin: 0 auto
+		text-align: center
+	
+	.icon-btn 
+		height: 40px
+		width: 40px
+		border: 0
+		border-color: $white
+		border-radius: 50%
+		margin: 0 auto
+		cursor: pointer
+		font-size: 20px
+		-webkit-backface-visibility: hidden
+		+transform(translateZ(0))
